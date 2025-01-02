@@ -6,7 +6,7 @@ import StateBranch from "./models/stateBrModel.js"; // Import StateBranch model
 import LocalBranch from "./models/localBrModel.js"; // Import LocalBranch model
 
 // MongoDB connection string (replace with your actual MongoDB URI)
-const mongoURI = "mongodb://localhost:27017/test8"; // Or use MongoDB Atlas URI
+const mongoURI = "mongodb://localhost:27017/imaams"; // Or use MongoDB Atlas URI
 
 // Connect to MongoDB
 mongoose
@@ -18,7 +18,7 @@ mongoose
   .catch((err) => console.error("MongoDB connection error:", err));
 
 // Path to the CSV file
-const csvFilePath = "./test4.csv"; // Update this with the actual path to your CSV file
+const csvFilePath = "./finaldata.csv"; // Update this with the actual path to your CSV file
 
 // Utility function to parse dates from CSV (DD-MM-YYYY format)
 function parseDate(dateString) {
